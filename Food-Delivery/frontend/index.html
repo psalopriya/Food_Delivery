@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+</head>
+<body>
+    <header class="main-header">
+        <nav>
+            <div class="icon">
+                <a class="head" href="index.html">SP Foods</a>  <!-- Added text here -->
+                <div id="location-filter">
+                <input type="text" id="location-input" placeholder="Enter your location" />
+                <button id="location-btn">🔍</button> </div>
+            </div>
+            
+            <div class="text-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>   <!-- Added text here -->
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Log-In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="food-search">
+    <div class="search">
+        <form action="">
+            <input type="search" placeholder="Search your food!" required class="search-input" id="searchBox">
+            <input type="submit" value="Search" class="btn" id="searchBtn">
+        </form>
+    </div>
+</section>
+<section id="restaurants-section">
+    <h1>Restauants</h1>
+  <div id="restaurants-list" class="restaurant-container"></div>
+</section>
+<!-- Footer Section Start -->
+    <footer class="footer">
+        <div class="grid-3">
+            <div class="grid-3">
+                <div class="footer-section">
+                    <h3>About Us</h3><br>
+                    <p>We deliver quality food to your doorstep, fast and fresh. </p>
+                </div>
+                <div class="footer-section site-links">
+                    <h3>Site Map</h3><br>
+                    <div class="site-links">
+                        <a href="index.html">Home</a>
+                        <a href="menu.html">Menu</a>
+                        <a href="cart.html">Cart</a>
+                        <a href="login.html">Login</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section social">
+                    <h3>Social Links</h3><br>
+                    <div class="social">
+                        <ul>
+                           
+                            <li><a href="https://instagram.com"><img src="https://img.icons8.com/fluency/48/null/instagram-new.png"/></a></li>
+                            <li><a href="https://twitter.com"><img src="https://img.icons8.com/color/48/null/twitter--v1.png"/></a></li>
+                            <li><a href="https://linkedin.com"><img src="https://img.icons8.com/color/48/null/linkedin-circled--v1.png"/></a></li>
+                            <li><a href="https://youtube.com"><img src="https://img.icons8.com/color/48/null/youtube-play.png"/></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Copyright Section start -->
+    <section class="copyright">
+        <div class="container text-center">
+            <p>All rights reserved. Design By <a href="#">Code Arcade</a></p>
+        </div>
+        <a id="back-to-top" class="btn-primary1">
+            <i class="fa fa-angle-double-up"></i>
+        </a>
+    </section>
+    <!-- Copyright Section End -->
+
+
+    <script src="js/restaurant.js"></script>
+</body>
+</html>

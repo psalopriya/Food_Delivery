@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food Delivery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <!-- Header section -->
+  <header class="main-header">
+    <nav>
+      <div class="icon">
+        <a class="head" href="index.html">SP Foods</a>
+      </div>
+      <div class="text-right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Log-In</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Cart section -->
+  <section id="cart">
+    <div class="cart-container">
+      <table id="Foods">
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Food</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-body">
+  <tr id="empty-cart-message">
+    <td colspan="5" style="text-align:center; font-style:italic; color:#666; background-color: lightgray;">
+      Your Cart is Empty!
+    </td>
+  </tr>
+</tbody>
+
+      </table>
+
+      <div class="cart-footer">
+        <p id="total-amount">Total: ₹0.00</p>
+       <button id="place-order-btn" class="checkout-btn">Place Order</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/cart.js"></script>
+  
+</body>
+</html>

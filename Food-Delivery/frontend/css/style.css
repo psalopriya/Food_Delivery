@@ -1,0 +1,444 @@
+body {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    background-color: lightgray;
+}
+.main-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #fff; /* or your header background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* optional */
+}
+
+nav {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    
+}
+.location-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+#location-input {
+  padding: 5px;
+  font-size: 16px;
+  width: 100px;
+  border-radius: 4px;
+}
+
+#location-btn {
+  padding: 6.5px 7px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 2px gray;
+}
+
+.icon a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.text-right ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.text-right ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.text-right ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.search {
+    text-align: center;
+    margin: 10px auto;
+    
+}
+.food-search {
+    background-image: url(../images/searchBg.jpg); /* ✅ use forward slashes */
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 70px 0;
+    margin-top: 60px;
+    background-attachment: fixed;
+    height: 30px;
+    
+}
+
+
+.search-input {
+    padding: 10px 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+.search-input:hover {
+    border: 2px solid gray;
+    box-shadow: 0 6px 12px white;
+}
+
+
+.btn {
+    padding: 10px 20px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid gray;
+    box-shadow: 0 6px 12px white;
+}
+.loading, .no-results, .error-message {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.error-message {
+  color: #d32f2f;
+}
+
+.error-message button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#restaurant-list{
+        padding: 20px;
+}
+.restaurant-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.restaurant-card {
+  background-color: #fff;
+  border: 1px solid grey;
+  padding: 15px;
+  border-radius: 10px;
+  width: 250px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: 0 4px 20px black(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+#menu{
+    margin-top: 80px;
+}
+.dish-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    width: 100%; /* Ensure it stretches full width */
+    box-sizing: border-box;
+}
+
+.dish-item {
+    width: 250px;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+.dish-item h3 {
+    margin: 0 0 10px;
+}
+.cart-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+   
+    border-radius: 10px;
+ 
+}
+
+.cart-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#Foods {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+#Foods th, #Foods td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+#Foods th {
+    background-color: #ddd;
+}
+
+.cart-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total-amount {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+#error-message {
+  color: #d32f2f;
+  background-color: #ffebee;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+  display: none;
+}
+.checkout-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #218838;
+}
+.remove-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #c82333;
+}
+
+#menuBtn{
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+}
+#menuBtn:hover{
+    color: #000;
+    border: 2px solid black;
+    transform: scale(1.09);
+    box-shadow:0 6 12 gray;
+}
+#form {
+  box-shadow: 0 0 20px 2px #1a171780;
+  width: 70%;
+  padding: 7px 0;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 60px;
+}
+.form input,
+.form textarea {
+  width: 98%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #bfbbbb;
+  margin-bottom: 25px;
+}
+.form input[type="submit"] {
+  width: 30%;
+  border-radius: 5px;
+}
+#cart {
+  box-shadow: 0 0 20px 2px #1a171780;
+  width: 70%;
+  padding: 7px 0;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-top: 80px;
+}
+.cart input,
+.cart textarea {
+  width: 98%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  margin-bottom: 25px;
+}
+#Foods th {
+    padding: 15px 25px; /* vertical and horizontal space */
+    text-align: left;  
+    text-decoration: underline;
+    
+ /* optional, for cleaner alignment */
+}
+#login{
+    padding: 30px;
+}
+#logout-btn{
+padding: 5px;
+border-radius: 25px;
+margin-top: 20px;
+}
+
+/* ===== Footer Section Style Start ===== */
+.footer {
+  background: rgba(8, 8, 8, 0.85);
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer .grid-3 {
+  display: flex;
+  align-items: flex-start; /* Makes all children equal height */
+
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.footer-section {
+  flex: 1;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.site-links a {
+  display: block;
+  margin: 8px 0;
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-links a:hover {
+  text-decoration: underline;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social ul li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.social ul li a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social ul li a:hover {
+  color: #ccc;
+}
+
+/* ===== Footer Section Style End ===== */
+
+
+/* ===== Copyright Section Style Start ===== */
+.copyright {
+  overflow: hidden;
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+/* ===== Copyright Section Style End ===== */
+
+
+/* ===== Back-To-Top Button Style Start ===== */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 60px;
+  font-size: 16px;
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  z-index: 9999;
+  display: none;
+  cursor: pointer;
+}
+
+#back-to-top:hover {
+  background-color: #444;
+}
+/* ===== Back-To-Top Button Style End ===== */
+
+
+
+@media (max-width: 600px) {
+  .dish-item {
+    width: 100%;
+  }
+}

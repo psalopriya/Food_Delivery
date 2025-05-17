@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images\logo.png">
+</head>
+<body>
+    <!--Header section-->
+    <header class="main-header">
+        <nav>
+            <div class="icon">
+                <a class="head" href="index.html">SP Foods</a>  <!-- Added text here -->
+            </div>
+            <div class="text-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>   <!-- Added text here -->
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Log-In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+         <!-- cHeader section ends -->
+
+         <section id="form">
+            <div id="login">
+                <form id="register-form" class="form">
+        <fieldset>
+          <legend style="font-size: 30px;">Register</legend>
+          <p class="label">Name</p>
+          <input type="text" id="name" placeholder="Enter your name..." required>
+          <p class="label">Email</p>
+          <input type="email" id="email" placeholder="Enter your email..." required>
+          <p class="label">Password</p>
+          <input type="password" id="password" placeholder="Enter your password..." required>
+          <p class="label">Re-enter Password</p>
+          <input type="password" id="conform-password" placeholder="Re-nter your password..." required>
+          <input type="submit" value="Register" id="reg">
+        </fieldset>
+      </form>
+            </div>
+         </section>
+
+    <script src="js/restaurant.js"></script>
+    <script type="module" src="js/register.js"></script>
+    <script src="js/auth.js"></script>
+
+
+</body>
+</html>

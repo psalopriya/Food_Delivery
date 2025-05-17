@@ -1,0 +1,54 @@
+//login.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Delivery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/images/logo.png">
+    
+</head>
+<body>
+    <!--Header section-->
+    <header class="main-header">
+        <nav>
+            <div class="icon">
+                <a class="head" href="index.html">SP Foods</a>  <!-- Added text here -->
+            </div>
+            <div class="text-right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>   <!-- Added text here -->
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="login.html">Log-In</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+         <!-- cHeader section ends -->
+
+         <section id="form">
+            <div id="login">
+                <form id="login-form" class="form">
+        <fieldset>
+          <legend style="font-size: 30px;">Log in</legend>
+          <p class="label">Name</p>
+          <input type="text" id="name" placeholder="Enter your name..." required>
+          <p class="label">Email</p>
+          <input type="email" id="email" placeholder="Enter your email..." required>
+          <p class="label">Password</p>
+          <input type="password" id="password" placeholder="Enter your password..." required>
+          <input type="submit" value="Log in" class="btn-primary"> 
+        </fieldset>
+      </form>
+      <p style="padding: 5px;">Not having an account? <a href="register.html">Register</a></p> 
+      <div id="error-message" style="color: red; display: none;"></div>
+
+            </div>
+         </section>
+
+    <script src="js/restaurant.js"></script>
+    <script type="module" src="js/login.js"></script>
+
+</body>
+</html>
